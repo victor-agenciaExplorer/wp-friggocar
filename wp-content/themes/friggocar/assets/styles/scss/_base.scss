@@ -1,0 +1,69 @@
+@use 'variables';
+@use 'typography';
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.base-button {
+    background-color: variables.$blue-500;
+    display: block;
+
+    width: 100%;
+
+    padding: 20px 40px;
+    margin: 0 auto;
+    border-radius: 0;
+
+    border: 1px solid transparent;
+
+    color: variables.$white;
+
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: variables.$font-xxmd;
+
+    text-transform: uppercase;
+
+    &:hover, &:focus-visible, &:not(.btn-check).btn:active  {
+        transition: all .3s;
+        color: variables.$white;
+        
+        background-color: variables.$blue-900;
+    }
+
+    &:not(.btn-check).btn:active {
+        border-color: variables.$gray-200;
+    }
+
+    &.cta-banner {
+        max-width: 211px;
+
+        @media (min-width: 1024px) {
+            margin: unset;
+        }
+    }
+
+    &.cta-cards {
+        max-width: 279px;
+    }
+
+    &.cta-about {
+        font-size: variables.$font-lg;
+        line-height: 120%;
+        padding: 2rem;
+    }
+
+    &--outlined {
+        @extend .base-button;
+
+        background-color: transparent;
+        border: 1px solid variables.$white;
+
+        font-size: variables.$font-md;
+    }
+}
