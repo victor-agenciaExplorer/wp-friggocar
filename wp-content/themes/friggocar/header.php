@@ -8,12 +8,14 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
 
     <header>
         <nav class="navbar navbar-expand-xl fixed-top">
-            <div class="container justify-content-between">
+            <div class="container">
                 <a href="/" class="navbar-brand">
-                    <img src="assets/images/logo.png" alt="" class="img-fluid">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png' ?>" alt=""
+                        class="img-fluid">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -37,7 +39,8 @@
                 );
                 ?>
 
-                <a href="contato.php" class="btn base-button ms-lg-5" role="button">Fale com um especialista</a>
+                <a href="<?php echo site_url() . '/contato' ?>" class="btn base-button ms-lg-5" role="button">Fale com um
+                    especialista</a>
             </div>
         </nav>
     </header>

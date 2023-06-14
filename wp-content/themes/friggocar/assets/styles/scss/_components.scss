@@ -86,12 +86,12 @@
 
     &--first {
         @extend .product;
-        background-image: url(../images/bg-truck.jpg);
+        background-image: url(../../images/bg-truck.jpg);
     }
 
     &--second {
         @extend .product;
-        background-image: url(../images/bg-plates.jpg);
+        background-image: url(../../images/bg-plates.jpg);
     }
 
     .product-wrapper {
@@ -244,8 +244,8 @@
     }
 
     @media (min-width: 991px) {
-        right: 80px;
-        bottom: 100px;
+        right: 40px;
+        bottom: 60px;
     }
 }
 
@@ -316,13 +316,11 @@
 }
 
 .custom-list {
-
-    // max-width: 261px;
     li {
         padding-inline-start: 1ch;
 
         &::marker {
-            content: url(../images/check.svg);
+            content: url(../../images/check.svg);
         }
 
         p {

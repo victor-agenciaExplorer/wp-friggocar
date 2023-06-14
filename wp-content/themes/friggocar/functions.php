@@ -22,10 +22,14 @@ function friggocar_load_scripts()
 
 add_action('wp_enqueue_scripts', 'friggocar_load_scripts');
 
-register_nav_menus(
-    array(
-        'friggocar_main_menu' => 'Menu'
-    )
-);
+function friggocar_config()
+{
+    register_nav_menus(
+        array(
+            'friggocar_main_menu' => 'Menu'
+        )
+    );
 
-
+    add_theme_support('title-tag');
+}
+add_action('after_setup_theme', 'friggocar_config', 0);

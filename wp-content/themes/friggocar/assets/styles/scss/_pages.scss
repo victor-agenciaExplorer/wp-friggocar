@@ -8,7 +8,7 @@
     .about-us {
         .curves-background {
             @media (min-width: 991px) {
-                background-image: url('../images/curves.svg');
+                background-image: url('../../images/curves.svg');
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: 150% 110%;
@@ -21,7 +21,7 @@
 
     .newsletter {
         background-color: variables.$blue-900;
-        background-image: url('../images/bg-newsletter.jpg');
+        background-image: url('../../images/bg-newsletter.jpg');
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
@@ -48,7 +48,7 @@
 
 #privacy-policy {
     .internal-banner {
-        background-image: url('../images/banner-privacidade.jpg');
+        background-image: url('../../images/banner-privacidade.jpg');
     }
 
     h2,
@@ -72,18 +72,17 @@
 
 #who-we-are {
     .internal-banner {
-        background-image: url('../images/who-we-are-internal-bg.jpg');
+        background-image: url('../../images/who-we-are-internal-bg.jpg');
     }
 
     position: relative;
     overflow: hidden;
 
     &::before {
-        // content: url(../images/curves-1.svg);
         content: '';
         width: 614px;
         height: 392px;
-        background-image: url(../images/curves-1.svg);
+        background-image: url(../../images/curves-1.svg);
         background-size: contain;
         background-repeat: no-repeat;
 
@@ -97,7 +96,7 @@
         content: '';
         width: 614px;
         height: 392px;
-        background-image: url(../images/curves-2.svg);
+        background-image: url(../../images/curves-2.svg);
         background-size: contain;
         background-repeat: no-repeat;
 
@@ -109,7 +108,7 @@
 
     @media (min-width: 991px) {
         &::before {
-            content: url(../images/curves-1.svg);
+            content: url(../../images/curves-1.svg);
             background-image: unset;
             background-size: unset;
             background-repeat: unset;
@@ -122,7 +121,7 @@
         }
 
         &::after {
-            content: url(../images/curves-2.svg);
+            content: url(../../images/curves-2.svg);
             width: unset;
             height: unset;
 
@@ -143,7 +142,7 @@
 
 #eutectic-plates {
     .internal-banner {
-        background-image: url('../images/plates-internal-bg.jpg');
+        background-image: url('../../images/plates-internal-bg.jpg');
     }
     
     .specifications {
@@ -162,12 +161,12 @@
 
 #contact {
     .internal-banner {
-        background-image: url('../images/contact-internal-bg.jpg');
+        background-image: url('../../images/contact-internal-bg.jpg');
     }
 }
 
 #refrigerated-bodies {
     .internal-banner {
-        background-image: url('../images/bodies-internal-bg.jpg');
+        background-image: url('../../images/bodies-internal-bg.jpg');
     }
 }

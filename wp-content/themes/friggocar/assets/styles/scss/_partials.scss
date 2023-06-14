@@ -8,6 +8,7 @@ header {
         &.navbar {
             padding: 2rem !important;
             transition: all .3s;
+            background-color: variables.$blue-900;
 
             .navbar-brand {
                 width: 157px;
@@ -28,6 +29,20 @@ header {
                 background-color: variables.$blue-900;
             }
 
+            .btn {
+                max-width: 281px;
+                font-size: variables.$font-xmd;
+                color: variables.$white;
+    
+                padding: 0.875rem 1.375rem;
+    
+                display: none;
+    
+                @media (min-width: 991px) {
+                    display: block;
+                }
+            }
+
             .navbar-toggler {
                 padding: 0;
                 border: 0;
@@ -37,7 +52,7 @@ header {
                 height: 28px;
 
                 .open-menu {
-                    content: url('../images/hamburguer.svg');
+                    content: url('../../images/hamburguer.svg');
                     opacity: 1;
                     display: block;
 
@@ -45,7 +60,7 @@ header {
                 }
 
                 .close-menu {
-                    content: url('../images/close.svg');
+                    content: url('../../images/close.svg');
                     display: none;
 
                     transition: all .1s;
@@ -74,6 +89,10 @@ header {
                         display: block;
                     }
                 }
+
+                .btn {
+                    display: block;
+                }
             }
         }
 
@@ -94,21 +113,15 @@ header {
                     transition: all .3s;
                 }
             }
-
-            .btn {
-                max-width: 281px;
-                font-size: variables.$font-xmd;
-                color: variables.$white;
-
-                padding: 0.875rem 1.375rem;
-            }
         }
+
+        
     }
 }
 
 .banner {
     height: 95vh;
-    background-color: rgba(0, 77, 128, 0.8);
+    background-color: rgba(0, 77, 128, 1);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,14 +129,14 @@ header {
 
 
     &.banner-0 {
-        background-image: url('../images/banner2.jpg');
+        background-image: url('../../images/banner2.jpg');
     }
 
     @media (min-width: 991px) {
         height: 100vh;
 
         &.banner-0 {
-            background-image: url('../images/banner2-desktop.jpg');
+            background-image: url('../../images/banner2-desktop.jpg');
         }
     }
 
@@ -190,7 +203,7 @@ header {
 .internal-banner {
     height: 45vh;
 
-    background: rgba(0, 77, 128, 0.8);
+    background: rgba(0, 77, 128, 1);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
